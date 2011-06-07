@@ -1,5 +1,6 @@
 PyQRNativeGAE
 ==============
+A small lib for genrating 2D QRCodes on Google App Engine infrastructure. Most libraries don't work as they use PIL which is not fully supported on GAE. I've created this project on top of other QRCode generation library that was using PIL and made some edits + added feature of SVG codes generation. 
 
 How to use (example in Django):
 -------------------------------
@@ -17,7 +18,7 @@ or
 
     return HttpResponse(qr.make_image(), mimetype="image/png")
 
-Work for various domestic clients. Meetings with clients. Preparing application architecture. jkImplementation of UI. Backend and frontend development works on intranet and internet applications and websites. Working as individual and as a part of bigger team. Project management. Face to face and remote communication.
+That's it. Works great on Google App Engine.
 
 Prereqs:
 ----------
