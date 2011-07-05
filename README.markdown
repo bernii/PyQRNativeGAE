@@ -9,8 +9,9 @@ Simply just import it and generate QR Code.
 
     from PyQRNative import QRErrorCorrectLevel
     from PyQRNativeGAE import QRCode
+	url = "https://github.com/bernii/PyQRNativeGAE"
     qr = QRCode(QRCode.get_type_for_string(url), QRErrorCorrectLevel.L)
-    qr.addData("https://github.com/bernii/PyQRNativeGAE")
+    qr.addData(url)
     qr.make()
     return HttpResponse(qr.make_svg(), mimetype="image/svg+xml")
 
